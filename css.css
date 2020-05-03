@@ -1,9 +1,15 @@
 body {
-    background-color: #fffff
+    background-color: #ffffff
 }
 
 #title_text {
     text-align: center;
+}
+
+#header {
+
+    margin-left: 10em;
+    display: block;
 }
 
 #navbar li{
