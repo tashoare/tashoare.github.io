@@ -7,18 +7,40 @@ body {
 }
 
 #header {
-
-    margin-left: 10em;
     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
-#navbar li{
-    display: inline;
-    padding: 1em;
+.navbar{
     text-align: center;
-    font-family: helvetica;
-    font-weight: bold;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  li a {
+    display: inline-block;
+    color: rgb(95, 80, 80);
+    padding: 0.6em 2em;
+    text-decoration: none;
+    font-family: courier;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  li a:hover {
+    color: rgb(8, 95, 47);
+  }
 
 #intro {
     margin: 5% 5%;
