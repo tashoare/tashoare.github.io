@@ -2,48 +2,130 @@
 <html>
 
     <head>
-        <title>yards and yarn</title>
-        <!-- Our CSS styles -->
-        <link rel="stylesheet" href="css.css">
-        <!-- /* Javascript not here yet */ -->
-      
-        <!-- /* Font File */ -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> -->
-        <style>
-    @import url('https://fonts.googleapis.com/css?family=Barrio|Bungee+Inline|Bungee+Shade|Codystar|Fascinate+Inline|Raleway');
-    </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       </head>
 
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Add a gray background color with some padding */
+        body {
+          font-family: courier;
+          padding: 20px;;
+        }
+      
+        
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {   
+          float: left;
+          width: 30%;
+        }
 
-<body> 
-    
+        .logo {
+          position: sticky;
+        }
 
-        <div class="flex-container">
-          
-          <div logo>
-        <img src="usefultings\yardsnyarnprobs10000.png" style="margin-left: 1em;" width=50%/>
-        <br>
-        <ul class=navbar>
-          <li><a href="./index.html">Blog</a></li>
-          <li><a href="./about.html">About</a></li>
-        </ul>
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  
+  li a {
+    display: inline-block;
+    color: rgb(95, 80, 80);
+    padding: 0.6em 2em;
+    text-decoration: none;
+    font-family: courier;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+        
+        /* Right column */
+        .rightcolumn {
+          float: left;
+          width: 70%;
+          padding-left: 20px;
+        }
+        
+        /* Fake image */
+        .fakeimg {
+          background-color: #aaa;
+          width: 100%;
+          padding: 20px;
+        }
+        
+        /* Add a card effect for articles */
+        .card {
+           background-color: white;
+           padding: 20px;
+           margin-top: 20px;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Footer */
+        .footer {
+          padding: 20px;
+          text-align: center;
+          background: #ddd;
+          margin-top: 20px;
+        }
+        
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+          .leftcolumn, .rightcolumn {   
+            width: 100%;
+            padding: 0;
+          }
+        }
+        </style>
+        </head>
+        <body>
+      
+        
+        <div class="row">
+          <div class="leftcolumn">
+
+            <div class="logo">
+              <img src="usefultings\yardsnyarnprobs10000.png" width=99%/>
+            </div>
+
+            <ul class=navbar>
+              <li><a href="./index.html">Blog</a></li>
+              <li><a href="./about.html">About</a></li>
+            </ul>    
           </div>
 
-          <div>
-        <p>content</p>
+          <div class="rightcolumn">
+        
+            <div class="card">
+              <h2>TITLE HEADING</h2>
+              <h5>Date</h5>
+              <div><img src= "https://live.staticflickr.com/65535/49875631892_8987c2f1f5_b.jpg" style="height:200px"/></div>
+              <p>Some text..</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
 
-      </div>
-  </div>
-
-
-    
-
-
-</body>
-
-
-
-</html>
-
+          </div>
+        </div>
+        
+        <div class="footer">
+          <h2>Footer</h2>
+        </div>
+        
+        </body>
+        </html>
+        
 
