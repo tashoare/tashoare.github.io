@@ -82,6 +82,46 @@ ul {
           background: #ddd;
           margin-top: 20px;
         }
+
+        .accordion {
+    font-family: courier;
+    color: rgb(9, 78, 18);
+    cursor: pointer;
+    font-size:1em;
+    font-weight: bold;
+    width: 99%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+
+        .active, .accordion:hover {
+    background-color:#cae1d7;
+    text-shadow: 1px 1px grey;
+}
+
+#title {
+  margin-left: 15px;
+}
+
+#date {
+  margin-left: 15px;
+}
+
+.photo {
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.panel {
+    padding: 0 16px;
+    display: none;
+    overflow: hidden;
+    width: 99%;
+}
+
+
         
         /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 800px) {
@@ -111,19 +151,72 @@ ul {
           <div class="rightcolumn">
         
             <div class="card">
-              <h2>TITLE HEADING</h2>
-              <h5>Date</h5>
-              <div><img src= "https://live.staticflickr.com/65535/49875631892_8987c2f1f5_b.jpg" style="height:200px"/></div>
-              <p>Some text..</p>
-              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <button class=accordion>
+                <h2 id=title>Dryad's saddle ramen</h2>
+              <h5 id=date>9th May 2020</h5>
+              <div class=photo><img src="https://live.staticflickr.com/65535/49876067141_75e6cf063c_z.jpg" style="height:300px"/></div>
+            </button>
+              <div class=panel>
+                <p class= content> 
+                 hsgdhtsfg
+                   </p>
+                   <div class=extra photos> 
+                    <img src="https://live.staticflickr.com/65535/49875504403_2725fb0d82_w.jpg" width="240" height="240"/>
+                    <img src="https://live.staticflickr.com/65535/49876347672_09e1644cfb_w.jpg" width="240" height="240"/>
+                   </div>
             </div>
-
           </div>
+
+
+            <div class="card">
+              <button class=accordion>
+                <h2 id=title>Calendula oil</h2>
+              <h5 id=date>9th May 2020</h5>
+              <div class=photo><img src="https://live.staticflickr.com/65535/49876167812_55a9e13be8_b.jpg" style="height:300px"/></div>
+            </button>
+              <div class=panel>
+                <p class= content> 
+                  Calendula oil was my first foray into using flowers/herbs for skincare. We grew them in the polytunnel in big numbers on the Lancaster community farm... they are a great trap to attract aphids away from the valuable crops. They also bring beneficial insects inside with their vibrant orange display, a quality which makes them one of my favourite cut flowers. 
+<br><br> After a bit of research I found out the flower is also hypo-allergenic with a bunch of skin-healing properties (I really love this plant), and as someone who suffers with sensitive skin and acne I decided to try making some oil. 
+<br><br>I picked a bag of flowerheads and then left them to dry on a sunny windowsill for about 2 weeks, until they were papery. I then removed the petals and put them in a disinfected jar, completely covering them with almond oil (maybe mixed with some olive oil to keep the cost down for a budget student). I left it on the windowsill for another ~6 weeks so the petals could infuse, shaking the jar whenever I remembered. Some instructions tell you to put the jar in a paper bag to avoid the beneficial bits breaking down from sunlight, but I didn’t do this, mostly just because I liked looking at it 😊 Finally I strained the petals out, and have been using a few drops directly on my face, or mixing it with soaked oats to make a really refreshing face mask. I think it’ll take more than a good healing oil to fix my skin, which is a long-term issue. But I like to think it does some good.
+                   </p>
+                   <div class=extra photos> 
+                     <img src="https://live.staticflickr.com/65535/49876243987_b026aaaceb_n.jpg" width="320" height="240"/>
+                     <img src="https://live.staticflickr.com/65535/49875936791_838d48db0f_n.jpg" width="240" height="320"/>
+                   </div>
+            </div>
+          </div>
+
+          
+
         </div>
+      </div>
         
         <div class="footer">
           <h2>Footer</h2>
         </div>
+
+
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+      
+          for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                  /* Toggle between adding and removing the "active" class,
+                  to highlight the button that controls the panel */
+                  this.classList.toggle("active");
+      
+                  /* Toggle between hiding and showing the active panel */
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                  } else {
+                      panel.style.display = "block";
+                  }
+              });
+          }
+          </script>
         
         </body>
         </html>
