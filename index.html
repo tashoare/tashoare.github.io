@@ -12,58 +12,32 @@
         <style>
     @import url('https://fonts.googleapis.com/css?family=Barrio|Bungee+Inline|Bungee+Shade|Codystar|Fascinate+Inline|Raleway');
     </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
       </head>
 
 
-<body>
-      
-   <header>  
+<body> 
     
-      <nav>
 
-        <img src="usefultings\yardsnyarnprobs100.png" style="width:80%; display:block; margin-left: auto; margin-right: auto;"/>
-        
+        <div class="flex-container">
+          
+          <div logo>
+        <img src="usefultings\yardsnyarnprobs10000.png" style="margin-left: 1em;" width=50%/>
+        <br>
         <ul class=navbar>
           <li><a href="./index.html">Blog</a></li>
           <li><a href="./about.html">About</a></li>
         </ul>
-      </ul>
+          </div>
 
-    </nav>
+          <div>
+        <p>content</p>
 
+      </div>
   </div>
 
-  </header>   
 
-    <div class="container">
-
-      <figure class="content">
-        <img src="https://live.staticflickr.com/3142/5704279175_ded0e5e6e0_b.jpg"/>
-        <button class="accordion"> block</button>
-        <div class="panel">
-          <p class="details">some content</p>
-        </div>
-      </figure>
-
-    <!-- This bit is javascript to make the buttons clicky -->
-
-              <script>
-                var acc = document.getElementsByClassName("accordion");
-                var i;
-                
-                for (i = 0; i < acc.length; i++) {
-                  acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.display === "block") {
-                      panel.style.display = "none";
-                    } else {
-                      panel.style.display = "block";
-                    }
-                  });
-                }
-                </script>
-              
+    
 
 
 </body>

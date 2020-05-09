@@ -2,19 +2,19 @@ body {
     background-color: #ffffff
 }
 
-#title_text {
-    text-align: center;
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+.logo{
+    position: absolute;
 }
-
-#header {
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-}
-
 .navbar{
-    text-align: center;
+    text-align: left;
+    position: -webkit-sticky;
+    margin-left: 3em;
+
 }
 
 ul {
@@ -47,98 +47,3 @@ ul {
     margin-top:5em;
 }
 
-//*main content stuff*//
-
-button {
-    background: none;
-    border: 0;
-    color: inherit;
-    /* cursor: default; */
-    font: inherit;
-    line-height: normal;
-    overflow: visible;
-    padding: 0;
-    -webkit-appearance: button; /* for input */
-    -webkit-user-select: none; /* for button */
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
-
-.accordion {
-  font-family: courier;
-  background-color:rgb(125, 129, 128);
-  color: white;
-  cursor: pointer;
-  font-size:1.3em;
-  font-weight: bold;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: center;
-  outline: none;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: rgb(143, 108, 43);
-  text-shadow: 2px 2px grey;
-  width: 100%;
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-}
-
-
-.container {
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-flex-direction: row wrap;
-box-sizing: border-box;
-border: 0px;
-}
-
-.container img {
-width: 40%;
-border-radius: 1%;
-}
-
-.content {
-padding: 2%;
-max-width: 25%;
-text-align: justify;
-font-family: raleway;
-}
-
-@media (max-width: 1000px) {
-  #title_text {
-    padding: 0.75em 1em;
-    text-align: center;
-    font-size: 1.4em;
-    /* justify-content: flex-start;
-    align-items: center; */
-    }
-
-    .panel p {
-      font-size:2em;
-    }
-
-  .content {
-    max-width: 100%;
-    }
-  .container {
-    flex-direction: column;
-    }
-  .container img{
-    width: 40%;
-    }
-  #animation_ {
-    height: 0.5em;
-    margin-top: 4%;
-  }
-
-  
