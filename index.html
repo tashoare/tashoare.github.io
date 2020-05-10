@@ -101,6 +101,19 @@ ul {
     text-shadow: 1px 1px grey;
 }
 
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 20px;
+  color: #777;
+  float: right;
+  margin-top: -360px;
+  margin-right: 20px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
 #title {
   margin-left: 15px;
 }
