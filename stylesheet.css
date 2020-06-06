@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Add a gray background color with some padding */
+  body {
+    font-family: courier;
+    padding: 20px;;
+  }
+
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 30%;
+  }
+
+  .logo {
+    position: sticky;
+  }
+
+  #pages {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 30px;
+    color: #4CAF50;
+    }
+
+ul {
+list-style-type: none;
+margin: 0;
+overflow: hidden;
+text-align: center;
+}
+
+
+li a {
+display: inline-block;
+color: rgb(95, 80, 80);
+padding: 0.6em 2em;
+text-decoration: none;
+font-family: courier;
+font-size: 1.3em;
+font-weight: bold;
+}
+
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 70%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+
+  .accordion {
+font-family: courier;
+color: rgb(9, 78, 18);
+cursor: pointer;
+font-size:1em;
+font-weight: bold;
+width: 99%;
+border: none;
+text-align: left;
+outline: none;
+transition: 0.4s;
+}
+
+  .active, .accordion:hover {
+background-color:#cae1d7;
+text-shadow: 1px 1px grey;
+}
+
+.accordion:after {
+content: '\02795'; /* Unicode character for "plus" sign (+) */
+font-size: 20px;
+color: #777;
+float: right;
+margin-top: -360px;
+margin-right: 20px;
+}
+
+.active:after {
+content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+#title {
+margin-left: 15px;
+}
+
+#date {
+margin-left: 15px;
+}
+
+.photo {
+margin-left: 15px;
+margin-bottom: 20px;
+}
+
+.panel {
+padding: 0 16px;
+display: none;
+overflow: hidden;
+width: 99%;
+}
+
+
+
+a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.round {
+border-radius: 50%;
+}
+}
+
+
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
