@@ -4,7 +4,7 @@
   
   /* Add a gray background color with some padding */
   body {
-    font-family: courier;
+    font-family: 'Manrope', sans-serif;
     padding: 20px;;
   }
 
@@ -40,7 +40,6 @@ display: inline-block;
 color: rgb(95, 80, 80);
 padding: 0.6em 2em;
 text-decoration: none;
-font-family: courier;
 font-size: 1.3em;
 font-weight: bold;
 }
@@ -83,7 +82,6 @@ font-weight: bold;
   }
 
   .accordion {
-font-family: courier;
 color: rgb(9, 78, 18);
 cursor: pointer;
 font-size:1em;
@@ -124,6 +122,7 @@ margin-left: 15px;
 .photo {
 margin-left: 15px;
 margin-bottom: 20px;
+max-width: 100%;
 }
 
 .panel {
@@ -145,12 +144,4 @@ border-radius: 50%;
 }
 }
 
-
   
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
-    }
-  }
