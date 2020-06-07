@@ -20,12 +20,6 @@
     position: sticky;
   }
 
-  #pages {
-    display: inline-block;
-    padding: 8px 16px;
-    font-size: 30px;
-    color: #4CAF50;
-    }
 
 ul {
 list-style-type: none;
@@ -119,6 +113,8 @@ margin-left: 15px;
 margin-left: 15px;
 }
 
+
+
 .photo {
 margin-left: 15px;
 margin-bottom: 20px;
@@ -142,6 +138,6 @@ color: black;
 .round {
 border-radius: 50%;
 }
-}
+
 
   
